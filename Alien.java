@@ -33,9 +33,9 @@ public class Alien {
 		return 0;
 	}
 	//prints the rows of the board
-	public void printBoard() {
-		for(ArrayList<Integer> x: this.Board) {
-			System.out.println(x);
+	//public void printBoard() {
+	//	for(ArrayList<Integer> x: this.Board) {
+	//		System.out.println(x);
 		}
 	}
 

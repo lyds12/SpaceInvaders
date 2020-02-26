@@ -15,10 +15,10 @@ public class Alien {
 		}
 		//adding the row to the board
 		for (int x = 0; x <6;x++) {
-			Board.add(new ArrayList<Integer>(RowEmpty));
+			Board.add(new ArrayList<Integer>(RowFull));
 		}
 		for (int x = 0; x <4;x++) {
-			Board.add(new ArrayList<Integer>(RowFull));
+			Board.add(new ArrayList<Integer>(RowEmpty));
 		}
 	}
 	public int takeDamage(int xPos) {

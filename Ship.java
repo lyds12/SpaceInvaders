@@ -41,7 +41,6 @@ public class Ship {
 		        return i;
 		    }
 		}
-		//returns if there is an error
 		
 		//Print Board again with Ship Array List 
 		for (ArrayList<Integer> rows: board) {

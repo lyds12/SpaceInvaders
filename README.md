@@ -20,8 +20,9 @@ https://www.eclipse.org/downloads/
 ## How to execute the game on Terminal
 Download all the files from this Github as a Zipped Download. Extract the files and move all files to a folder. Open a command prompt window and go to the directory where you saved the files (MyFirstJavaProgram.java). Assume it's C:. Type 'javac FirstFileName.java' for each file name and press enter to compile your code. You will have to compile each file from Github. If there are no errors in your code, the command prompt will take you to the next line (Assumption: The path variable is set). Now, type 'java Main' to run the game. You will be able to see the gamespace printed on the window.
 
-##Demo
+## Demo
 
+![](Demo1.gif)
 
 
 ## Hope you enjoy the game! 

@@ -20,18 +20,15 @@ public class Alien {
 		for (int x = 0; x <6;x++) {
 			Board.add(new ArrayList<Integer>(RowEmpty));
 		}
+		//default location of ship at Column 0 for gameplay
+		ArrayList<Integer> RowShip = Board.get(Board.size() - 1);
+		RowShip.set(0, 2);
 	}
 	
-	public void printBoard() {
-		for(ArrayList<Integer> x: this.Board) {
-				System.out.println(x);
-			}
-		}
-	
-
 
 	public int takeDamage(int xPos) {
 		//scans through the 2d array until it has found a 1 then replaces it with a 0
+		//will remove the lowermost 1 
 		for(int i = this.Board.size() - 1; i >= 0; i--){
 			ArrayList<Integer> x = this.Board.get(i);
 			if(x.get(xPos) == 1) {

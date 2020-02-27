@@ -9,6 +9,7 @@ If user opts to move their ship, the game will ask which column they would like 
 You will need to install JDK(Java Development Kit) and an IDE, for example Eclipse.
 
 To set up a Java Development Environment, follow the download links:
+
 https://www.oracle.com/technetwork/java/archive-139210.html
 
 https://www.eclipse.org/downloads/

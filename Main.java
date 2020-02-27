@@ -21,7 +21,7 @@ public class Main {
 			
 			
 			//alien.printBoard(); I used to call Stu's board but we're using Sanjita's now so maybe this can be made into a method since it is called in 3 different places and then I can call that method here instead
-			System.out.print("Enter m for move or f for fire and S to check your score ");
+			System.out.print("Enter m for move or f for fire and s to check your score: ");
 			turn = reader.nextLine(); //prompt for what to do 
 			
 			
@@ -37,15 +37,17 @@ public class Main {
 				
 			}
 		   
-			if(turn.contentEquals("s") || turn.contentEquals("S")){
+			else if(turn.contentEquals("s") || turn.contentEquals("S")){
 				int column_score = col_score1(null); // get number from attacked ships
 				alien.takeDamage(column_score);
 
 			}
+			
 			else {
-				System.out.println("Invalid input. Try again. ");
+				System.out.println("Invalid input. Try again. Enter m, f or s. ");
 				
 			}
+
 		
 		}
 	}
@@ -54,7 +56,8 @@ public class Main {
 		while(true) {
 			System.out.print("What column do you want to move to? ");
 			
-			int col_number = Integer.parseInt(reader.nextLine());
+			try{
+				 int col_number = Integer.parseInt(reader.nextLine()); //accept input as string, later on catch if it is not a string 
 			
 			if(col_number < 0 || col_number > 9) {
 				System.out.println("That column does not exist. Please enter a column between 0 and 9.");
@@ -63,6 +66,10 @@ public class Main {
 				
 			}
 				return col_number; 
+			}
+			catch (NumberFormatException exception){ //Caught the number format exception if the input is not a string
+				System.out.println("That column does not exist. Please enter a column between 0 and 9.");
+			}
 		}
 	
 }
@@ -87,7 +94,7 @@ public class Main {
 
 
 
-	//get the score from the column_fire every time f is pressed it regesters the score
+	//get the score from the column_fire every time f is pressed it registers the score
 	
 	public static int col_score(Scanner score){
 		while(true) {
@@ -107,7 +114,5 @@ public class Main {
 	}
 	
 	}
-	
-					
-				
+		
 		

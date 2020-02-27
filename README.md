@@ -6,7 +6,7 @@ A fixed shooter in which the player controls a laser ship by moving it horizonta
 
 ### Prerequisites
 
-You will need to install Java and an IDE, for example Eclipse.
+You will need to install JDK(Java Development Kit) and an IDE, for example Eclipse.
 
 ### Installing
 
